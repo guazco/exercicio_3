@@ -9,9 +9,8 @@ public class leituraTeste {
 	try{
 		FileReader leitor = new FileReader(nome);
 		BufferedReader ler = new BufferedReader(leitor);
-		int caracterInt = ler.read();
-		char caracterChar = (char) caracterInt;
-		System.out.println(caracterChar);
+		int car = ler.read();
+		System.out.println(linha);
 		ler.close();
 		}
 	catch (IOException e) {
