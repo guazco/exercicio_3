@@ -1,0 +1,21 @@
+package exercio_3;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class leituraTeste {
+	String nome 
+	nome = "arquivo_teste.txt";
+	try{
+		FileReader leitor = new FileReader(nome);
+		BufferedReader ler = new BufferedReader(leitor);
+		String linha = ler.readLine();
+	}
+	catch (IOException e) {
+        System.err.printf("Erro na abertura do arquivo: %s.\n",
+        e.getMessage());
+    }
+}
+	
+	
+

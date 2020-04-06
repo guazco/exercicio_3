@@ -1,0 +1,12 @@
+package exercio_3;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class leituraTeste {
+	FileReader leitor = new FileReader('arquivo_teste.txt');
+	BufferedReader ler = new BufferedReader(leitor);
+	String linha = ler.nextLine();
+	
+	
+}

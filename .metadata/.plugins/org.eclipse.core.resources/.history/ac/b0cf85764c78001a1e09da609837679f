@@ -1,0 +1,27 @@
+package exercio_3;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class leituraTeste {
+	
+	void LerArquivo(String nome){ 
+	try{
+		FileReader leitor = new FileReader(nome);
+		BufferedReader ler = new BufferedReader(leitor);
+		String linha = ler.readLine();
+		System.out.println(linha);
+		ler.close();
+		}
+	catch (IOException e) {
+        System.err.printf("Erro na abertura do arquivo: %s.\n",
+        e.getMessage());
+    	}
+	}
+	public static void main(String[] args) {
+		String nome = "arquivo_teste.txt"
+		leituraTeste leitura = new leituraTeste();
+		leitura.LerArquivo(nome);
+	}
+}
+

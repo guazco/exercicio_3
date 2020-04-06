@@ -1,0 +1,9 @@
+package exercio_3;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class leituraTeste {
+	FileReader leitor = new FileReader('/home/gustavo/Desktop/exercicio_3/exercio_3/arquivo_teste.txt');
+	
+}
